@@ -1,9 +1,13 @@
+import AboutUs from "../Component/AboutUs";
+import Slideshow from "../Component/Slideshow";
+
 
 
 const Home = () => {
     return (
         <div>
-            This is homepage
+            <Slideshow></Slideshow>
+            <AboutUs></AboutUs>
         </div>
     );
 };

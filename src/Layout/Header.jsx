@@ -3,9 +3,9 @@ import logo from "../assets/logo-of-lingobingo.png"
 
 const Header = () => {
     const links = <>
+        <NavLink className="font-semibold mr-2" to="/">Home</NavLink>
         <NavLink className="font-semibold mr-2" to="/start-learning">Start_Learning</NavLink>
         <NavLink className="font-semibold mr-2" to="/tutorials">Tutorials</NavLink>
-        <NavLink className="font-semibold mr-2" to="/">Home</NavLink>
         <NavLink className="font-semibold mr-2" to="/about-us">About_Us</NavLink>
     </>
 

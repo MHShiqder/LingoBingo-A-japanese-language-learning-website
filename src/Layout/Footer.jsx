@@ -1,7 +1,7 @@
 
 const Footer = () => {
     return (
-        <footer className="footer footer-center bg-primary text-primary-content p-10 grid md:grid-cols-3">
+        <footer className="footer footer-center bg-blue-950 text-white p-10 grid md:grid-cols-3">
             <div>
                 <h3 className="font-bold text-xl">Contact</h3>
                 <p className="font-semibold">Email us at: support@lingobingo.com</p>
