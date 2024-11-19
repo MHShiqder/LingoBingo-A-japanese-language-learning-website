@@ -10,13 +10,14 @@ const Header = () => {
     </>
 
     return (
-        <div>
-            <div className="welcome text-center mt-3">
+        <div className="bg-black text-white">
+            <div className="w-11/12 mx-auto">
+            <div className="welcome text-center pt-3">
                 <p className="">Welcome Hasibul Hasan </p>
             </div>
 
             <div className="main-header">
-                <div className="navbar bg-base-100">
+                <div className="navbar">
                     <div className="navbar-start">
                         <div className="dropdown">
                             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -57,6 +58,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     );
 };

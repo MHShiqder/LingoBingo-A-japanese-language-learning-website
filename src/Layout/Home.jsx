@@ -1,4 +1,5 @@
 import AboutUs from "../Component/AboutUs";
+import Success from "../Component/Success";
 import Slideshow from "../Component/Slideshow";
 
 
@@ -8,6 +9,7 @@ const Home = () => {
         <div>
             <Slideshow></Slideshow>
             <AboutUs></AboutUs>
+            <Success></Success>
         </div>
     );
 };

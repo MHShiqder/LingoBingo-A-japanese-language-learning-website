@@ -1,13 +1,13 @@
 
 const AboutUs = () => {
     return (
-        <div>
+        <div className="w-11/12 mx-auto">
             <section className=" py-12 ">
                 <div className="">
                     {/* section heading  */}
-                    <div className="text-center mb-10">
+                    <div className="text-center mb-5">
                         <h2 className="text-3xl font-bold text-gray-800 mb-4">About</h2>
-                        <p className="text-gray-700 text-lg mb-6 w-5/6 mx-auto">
+                        <p className="text-gray-700 text-lg w-5/6 mx-auto">
                             Our mission is to empower language learners by providing tools and
                             resources that make vocabulary acquisition effortless and fun. We aim
                             to help you build confidence and improve communication skills in
@@ -46,7 +46,7 @@ const AboutUs = () => {
                             </div>
                         </div>
                         {/* image part */}
-                        <div className="bg-[url('https://i.ibb.co.com/HGk4Ft7/jerry-wang-jfn-UC7s3iuw-unsplash.jpg')] bg-cover md:h-auto h-64 row-start-1 md:row-start-auto">
+                        <div className="bg-[url('https://i.ibb.co.com/Yh8VDRc/annie-spratt-4-4-WPFLVh-AY-unsplash-1.jpg')] bg-cover md:h-auto h-64 row-start-1 md:row-start-auto bg-center">
                             
                         </div>
                     </div>
