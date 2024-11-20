@@ -41,7 +41,7 @@ const slideImages = [
 
 const Slideshow = () => {
     return (
-      <div className="slide-container w-11/12 mx-auto">
+      <div className="slide-container w-11/12 mx-auto mt-10">
         <Slide duration={2000}>
          {slideImages.map((slideImage, index)=> (
             <div key={index}>

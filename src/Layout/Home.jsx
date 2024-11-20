@@ -7,6 +7,7 @@ import Slideshow from "../Component/Slideshow";
 const Home = () => {
     return (
         <div>
+            
             <Slideshow></Slideshow>
             <AboutUs></AboutUs>
             <Success></Success>

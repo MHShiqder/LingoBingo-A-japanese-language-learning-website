@@ -6,7 +6,7 @@ const Success = () => {
            <h1 className="text-4xl font-bold py-10 text-center">Success</h1>
            <div className="grid grid-cols-2 md:grid-cols-4 gap-5 ">
             <div className="flex flex-col items-center bg-[#ffffff3b] border py-10 space-y-3 ">
-                <img className="w-14" src="https://cdn-icons-png.flaticon.com/128/511/511587.png" alt="" />
+                <img  className="w-14 " src="https://cdn-icons-png.flaticon.com/128/511/511587.png" alt="" />
                 <h3 className="text-5xl"><CountUp end={1240}></CountUp></h3>
                 <h5 className="text-xl ">Users</h5>
             </div>

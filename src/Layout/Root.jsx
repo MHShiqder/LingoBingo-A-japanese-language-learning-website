@@ -6,6 +6,9 @@ import Footer from "./Footer";
 const Root = () => {
     return (
         <div>
+            <div className="welcome text-center py-2 text-black">
+                <p className="">Welcome Hasibul Hasan </p>
+            </div>
             <Header></Header>
             <Outlet></Outlet>
             <Footer></Footer>
