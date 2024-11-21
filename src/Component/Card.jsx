@@ -14,8 +14,13 @@ const Card = ({ fInfo }) => {
     else {
         color3 = true;
     }
+    function pronounceWord(word) {
+        const utterance = new SpeechSynthesisUtterance(word);
+        utterance.lang = 'ja-JP'; // Japanese
+        window.speechSynthesis.speak(utterance);
+      }
     return (
-        <div className={` flex flex-col  border-2 rounded-lg shadow-lg p-5  ${color3 ? "bg-red-300" : ""} ${color1 ? "bg-green-300" : ""}
+        <div onClick={()=>pronounceWord(word)} className={`cursor-pointer flex flex-col  border-2 rounded-lg shadow-lg p-5  ${color3 ? "bg-red-300" : ""} ${color1 ? "bg-green-300" : ""}
          ${color2 ? "bg-blue-300" : ""}`}>
             <p className='text-2xl font-bold text-center mb-3'>{word}</p>
             <p><strong>Meaning</strong>: {meaning}</p>
