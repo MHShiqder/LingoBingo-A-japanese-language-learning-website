@@ -9,7 +9,7 @@ const Success = () => {
     })
     return (
         <div className="bg-[#eab64f] w-11/12 mx-auto pb-10 bg-cover bg-right text-white px-5 mb-10">
-            <h1 className="text-4xl font-bold py-10 text-center">Success</h1>
+            <h1 className="text-5xl font-bold py-10 text-center">Success</h1>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-5 ">
                 <div className="flex flex-col items-center bg-[#ffffff3b] border py-10 space-y-3 ">
                     <img className="w-14 " src="https://cdn-icons-png.flaticon.com/128/511/511587.png" alt="" />

@@ -16,7 +16,7 @@ const Team = () => {
                         className="w-full h-full object-cover"
                     />
                     <div
-                        className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                        className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-100"
                     >
                         <div className="flex flex-col items-center space-y-2">
                             <h3 className="text-xl font-bold pt-20 ">Aiko Suzuki</h3>
@@ -72,7 +72,7 @@ const Team = () => {
                         className="w-full h-full object-cover"
                     />
                     <div
-                        className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                        className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-100"
                     >
                         <div className="flex flex-col items-center space-y-2">
                             <h3 className="text-xl font-bold pt-20 "> Naomi Tanaka</h3>
@@ -128,7 +128,7 @@ const Team = () => {
                         className="w-full h-full object-cover"
                     />
                     <div
-                        className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                        className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-100"
                     >
                         <div className="flex flex-col items-center space-y-2">
                             <h3 className="text-xl font-bold pt-20 ">Kenji Takahashi</h3>
@@ -184,7 +184,7 @@ const Team = () => {
                         className="w-full h-full object-cover"
                     />
                     <div
-                        className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                        className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-100"
                     >
                         <div className="flex flex-col items-center space-y-2">
                             <h3 className="text-xl font-bold pt-20 ">Satoshi Yamamoto</h3>

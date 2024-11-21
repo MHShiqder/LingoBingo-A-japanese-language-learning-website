@@ -6,7 +6,7 @@ const AboutUs = () => {
                 <div className="">
                     {/* section heading  */}
                     <div className="text-center mb-5">
-                        <h2 className="text-3xl font-bold text-gray-800 mb-4">About</h2>
+                        <h2 className="text-5xl font-bold text-gray-800 mb-4">About</h2>
                         <p className="text-gray-700 text-lg w-5/6 mx-auto">
                             Our mission is to empower language learners by providing tools and
                             resources that make vocabulary acquisition effortless and fun. We aim

@@ -5,9 +5,9 @@ const Newsletter = () => {
             <h3 className="text-5xl font-bold">Subscribe to Newsletter</h3>
             <p className="text-xl ">Stay updated with our latest news and offers</p>
 
-            <div className="join">
-                <input className="input input-bordered join-item rounded-full" placeholder="Email" />
-                <button className="btn bg-[#eab64f] join-item rounded-r-full text-lg">Subscribe</button>
+            <div className="md:join">
+                <input className="input input-bordered join-item rounded-lg" placeholder="Email" />
+                <button className="btn bg-[#eab64f] join-item rounded-lg text-lg mt-3 ml-3">Subscribe</button>
             </div>
         </div>
     );
