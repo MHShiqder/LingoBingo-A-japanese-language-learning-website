@@ -10,7 +10,7 @@ import { useLocation } from "react-router-dom";
 const Home = () => {
     const location=useLocation()
     return (
-        <div>            
+        <div >            
             <Slideshow></Slideshow>
             <AboutUs></AboutUs>
             <Success></Success>

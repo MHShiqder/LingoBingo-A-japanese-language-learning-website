@@ -1,8 +1,27 @@
-
+import 'animate.css';
+import { useEffect, useState } from 'react';
 
 const Team = () => {
+
+    const [isVisible, setIsVisible] = useState(false);  // State to track visibility
+      
+    useEffect(() => {
+      // Create an Intersection Observer to watch for when the element is visible on screen
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {  // If the element is visible on the screen
+            setIsVisible(true);        // Trigger the animation
+          }
+        });
+      });
+  
+      const element = document.getElementById('animateMe3');  // The element we want to animate
+      observer.observe(element);  // Start observing the element
+  
+      return () => observer.disconnect();  // Cleanup the observer when the component unmounts
+    }, []);
     return (
-        <div className="text-center w-11/12 mx-auto mb-10">
+        <div id="animateMe3" className={`text-center w-11/12 mx-auto mb-10   animate__animated ${isVisible ? 'animate__fadeInRight' : ''}`}>
             <h2 className="text-5xl font-bold text-gray-800 mb-10">Meet the Passionate Team</h2>
 
             {/* card container  */}

@@ -3,7 +3,6 @@ import Home from "../Layout/Home";
 import Root from "../Layout/Root";
 import StartLearning from "../Component/StartLearning";
 import Tutorial from "../Component/Tutorial";
-import AboutUs from "../Component/AboutUs";
 import Lesson from "../Component/Lesson";
 import Login from "../Component/Login";
 import Register from "../Component/Register";
@@ -34,7 +33,7 @@ const Router = createBrowserRouter([
         },
         {
             path:"/about-us",
-            element:<div>This is about us section</div>,
+            element:<div className="text-center text-5xl my-10">This is about us section</div>,
         },
         {
           path:"/lesson/:no",

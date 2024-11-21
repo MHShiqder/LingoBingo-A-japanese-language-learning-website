@@ -1,13 +1,34 @@
-
+import 'animate.css';
+import { useEffect, useState } from 'react';
 const AboutUs = () => {
+    
+        const [isVisible, setIsVisible] = useState(false);  // State to track visibility
+      
+        useEffect(() => {
+          // Create an Intersection Observer to watch for when the element is visible on screen
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {  // If the element is visible on the screen
+                setIsVisible(true);        // Trigger the animation
+              }
+            });
+          });
+      
+          const element = document.getElementById('animateMe1');  // The element we want to animate
+          observer.observe(element);  // Start observing the element
+      
+          return () => observer.disconnect();  // Cleanup the observer when the component unmounts
+        }, []);
+
+
     return (
-        <div className="w-11/12 mx-auto">
+        <div id="animateMe1" className={`w-11/12 mx-auto animate__animated ${isVisible ? 'animate__fadeInRight' : ''}`}>
             <section className=" py-12 ">
                 <div className="">
                     {/* section heading  */}
-                    <div className="text-center mb-5">
-                        <h2 className="text-5xl font-bold text-gray-800 mb-4">About</h2>
-                        <p className="text-gray-700 text-lg w-5/6 mx-auto">
+                    <div className="text-center mb-5 animate__animated animate__fadeInUp">
+                        <h2  className="text-5xl font-bold text-gray-800 mb-4">About</h2>
+                        <p  className="text-gray-700 text-lg w-5/6 mx-auto">
                             Our mission is to empower language learners by providing tools and
                             resources that make vocabulary acquisition effortless and fun. We aim
                             to help you build confidence and improve communication skills in
@@ -16,7 +37,7 @@ const AboutUs = () => {
                     </div>
 
                     {/* details container  */}
-                    <div className="grid md:grid-cols-2  ">
+                    <div className="grid md:grid-cols-2 animate__animated animate__fadeInLeft ">
                         {/* text part */}
                         <div className=" p-10 bg-sky-400">
 
