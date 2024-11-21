@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Card = ({ fInfo }) => {
-    const { difficulty, part_of_speech, pronunciation, meaning, word,example,when_to_say } = fInfo;
+    const { difficulty, part_of_speech, pronunciation, meaning, word, example, when_to_say } = fInfo;
     let color1 = false;
     let color2 = false;
     let color3 = false;
@@ -18,16 +18,17 @@ const Card = ({ fInfo }) => {
         const utterance = new SpeechSynthesisUtterance(word);
         utterance.lang = 'ja-JP'; // Japanese
         window.speechSynthesis.speak(utterance);
-      }
+    }
     return (
-        <div onClick={()=>pronounceWord(word)} className={`cursor-pointer flex flex-col  border-2 rounded-lg shadow-lg p-5  ${color3 ? "bg-red-300" : ""} ${color1 ? "bg-green-300" : ""}
+        <>
+            <div onClick={() => pronounceWord(word)} className={`cursor-pointer flex flex-col  border-2 rounded-lg shadow-lg p-5  ${color3 ? "bg-red-300" : ""} ${color1 ? "bg-green-300" : ""}
          ${color2 ? "bg-blue-300" : ""}`}>
-            <p className='text-2xl font-bold text-center mb-3'>{word}</p>
-            <p><strong>Meaning</strong>: {meaning}</p>
-            <p><strong>Pronunciation</strong>: {pronunciation}</p>
-            <p className='flex-1 mb-3'><strong>Part Of Speech</strong>: {part_of_speech}</p>
-            <button onClick={()=>document.getElementById('my_modal_5').showModal()} className='btn bg-white rounded-md'>When to say</button>
-
+                <p className='text-2xl font-bold text-center mb-3'>{word}</p>
+                <p><strong>Meaning</strong>: {meaning}</p>
+                <p><strong>Pronunciation</strong>: {pronunciation}</p>
+                <p className='flex-1 mb-3'><strong>Part Of Speech</strong>: {part_of_speech}</p>
+                <button onClick={() => document.getElementById('my_modal_5').showModal()} className='btn bg-white rounded-md'>When to say</button>
+            </div>
 
             {/* modal  */}
 
@@ -45,7 +46,9 @@ const Card = ({ fInfo }) => {
                     </div>
                 </div>
             </dialog>
-        </div>
+
+
+        </>
     );
 };
 
