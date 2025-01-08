@@ -32,7 +32,7 @@ console.log(user?.photoURL)
             <div className="main-header bg-[#eab64f] ">
                 <div className="navbar w-11/12 mx-auto p-0">
                     <div className="navbar-start md:w-1/2 w-2/3">
-                        <div className="dropdown">
+                        <div className="dropdown text-black">
                             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +49,7 @@ console.log(user?.photoURL)
                             </div>
                             <ul
                                 tabIndex={0}
-                                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-black">
                                 {
                                     links
                                 }

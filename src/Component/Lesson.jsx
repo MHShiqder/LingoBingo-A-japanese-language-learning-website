@@ -11,7 +11,7 @@ const Lesson = () => {
     return (
         <div className="text-center w-11/12 mx-auto">
             <h1 className="text-5xl mt-10 font-bold ">Lesson {no}</h1>
-            <div className="grid grid-cols-4 gap-5 my-10 ">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 my-10 ">
                 {
                     filteredInfo.map(fInfo => <Card fInfo={fInfo}></Card>)
                 }

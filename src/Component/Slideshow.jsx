@@ -16,10 +16,6 @@ const divStyle = {
 }
 
 
-
-
-
-
 const slideImages = [
   {
     url: 'https://i.ibb.co.com/rMZPgWM/robert-anasch-Mc-X3-Xu-JRs-UM-unsplash.jpg',
